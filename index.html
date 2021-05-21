@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Dashboard</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<nav class="navbar">
+		<h1>Weather Dashboard</h1>
+	</nav>
+	<div class="container-fluid" id="topinfo">
+		<div class="row"> 
+			<div class="col-md-3">
+				<div class="row">
+					<div class="container-fluid" id="searchbox">
+						<h3>Search By City</h3>
+						<div class="input-group mb-3">
+		  					<input type="text" class="form-control" placeholder="Enter City" id="cityname">
+		  					<div class="input-group-append">
+		    					<button class="btn btn-secondary searchbtn" type="button">Search</button>
+		  					</div>
+						</div>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="container-fluid">
+						<p>Previously Searched Cities:</p>
+						<div class="prev-searched-city"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="container-fluid" id="searchresults">
+					<div class="row">
+						<h3 id="city"></h3>
+					</div>
+					<div class="row">
+						<p id="temp">Temperature:</p>
+					</div>
+					<div class="row">
+						<p id="humid">Humidity:</p>
+					</div>
+					<div class="row">
+						<p id="wind">Wind Speed:</p>
+					</div>
+					<div class="row">
+						<p id="uv">UV Index:</p>
+					</div>
+				</div>
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="jumbotron-fluid">
+	  					<div class="container-fluid">
+	    					<h3 id="fiveday">Five Day Forcast</h3>
+	    					<div class="row">
+								<div class="col-md-2"> 
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title" id="date1"></h5>
+											<img id="img1">
+											<p class="cardinfo" id="temp1"></p>
+											<p class="cardinfo" id="humid1"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2"> 
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title" id="date2"></h5>
+											<img id="img2">
+											<p class="cardinfo" id="temp2"></p>
+											<p class="cardinfo" id="humid2"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2"> 
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title" id="date3"></h5>
+											<img id="img3">
+											<p class="cardinfo" id="temp3"></p>
+											<p class="cardinfo" id="humid3"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2"> 
+									<div class="card" >
+											<div class="card-body">
+											<h5 class="card-title" id="date4"></h5>
+											<img id="img4">
+											<p class="cardinfo" id="temp4"></p>
+											<p class="cardinfo" id="humid4"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2"> 
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title" id="date5"></h5>
+											<img id="img5">
+											<p class="cardinfo" id="temp5"></p>
+											<p class="cardinfo" id="humid5"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
